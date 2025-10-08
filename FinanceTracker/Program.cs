@@ -56,7 +56,6 @@ class Program
             Console.WriteLine("An error occurred. See log.txt for details.");
         }
     }
-
     static void AddTransaction(FinanceManager manager)
     {
         Console.Clear();
@@ -84,9 +83,14 @@ class Program
         };
 
         manager.AddTransaction(transaction);
-        Console.WriteLine("Transaction added!");
+
+        // Автозбереження
+        FileManager.SaveToFile(manager.GetTransactions());
+
+        Console.WriteLine("Transaction added and saved!");
         Pause();
     }
+
 
     static void ShowBalance(FinanceManager manager)
     {
