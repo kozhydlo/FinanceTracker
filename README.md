@@ -22,7 +22,7 @@ A simple console-based finance tracker built with C#. Track your income, expense
 2. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/FinanceTracker.git
+git clone https://github.com/kozhydlo/FinanceTracker.git
 ```
 
 3. Navigate to the project folder:
